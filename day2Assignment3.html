@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            Current Date in formats
+        </title>
+        <script>
+            var date = new Date();
+            var yyyy = date.getFullYear();
+            var mm = date.getMonth() + 1;
+            var dd = date.getDate();
+
+            if (mm < 10)
+            {
+                mm = "0"+mm;
+            }
+
+            if (dd < 10)
+            {
+                dd = "0"+dd;
+            }
+
+            document.write(" mm-dd-yyyy : " + mm + "-" + dd + "-" + yyyy);
+            document.write("<br>");
+            document.write(" mm/dd/yyyy : " + mm + "/" + dd + "/" + yyyy);
+            document.write("<br>");
+            document.write(" dd-mm-yyyy : " + dd + "-" + mm + "-" + yyyy);
+            document.write("<br>");
+            document.write(" dd/mm/yyyy : " + dd + "/" + mm + "/" + yyyy);
+        </script>
+    </head>
+    <body> 
+        <h2>
+            Question 3: Write a JavaScript program to get the current date.
+            <br>Expected Output : mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
+        </h2>
+    </body>
+</html>
+
