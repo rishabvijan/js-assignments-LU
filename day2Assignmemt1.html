@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Current Date and Time
+        </title>
+        <script>
+            var date = new Date();
+            var day = date.getDay();
+            days = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+            var hour = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+            if (hour > 12)
+            {
+                ampm = "PM";
+                hour -= 12;
+            }
+            else
+            {
+                ampm = "AM";
+            }          
+
+            document.write("Today is : " + days[day]);
+            document.write("<br>");
+            document.write(" Current Time is : "  + hour +" " + ampm +" : " + minutes + " : " + seconds );
+        </script>
+    </head>
+    <body> 
+        <h2>
+            Question : Write a JavaScript program to display the current day and time in the following format.
+            <br>Sample Output : Today is : Tuesday.
+            <br> Current time is : 10 PM : 30 : 38
+        </h2>
+    </body>
+</html>
+
