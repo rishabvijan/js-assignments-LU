@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+      var name = "Rishab";
+      console.log("var name = " + name);
+
+      {
+          let name = "LetsUpgrade";
+          console.log("Let name = " + name);
+      }
+
+      console.log("Outside Let name = " + name);
+
+      {
+      const name = "Rahul";
+
+      console.log("Constant name = " + name);
+
+      //var name = "Sai";   This will give an error 
+
+      }
+      console.log("Outside const name = " + name);
+
+      
+  </script>
+</head>
+<body>
+<h2> Question 2 </h2>
+<p> Write the difference between var, let and const with code examples.</p>
+
+<p> let allows you to declare variables that are limited in scope to the block, statement, or expression on which it is used. This is unlike the var keyword, which defines a variable globally, or locally to an entire function regardless of block scope.</p>
+
+<p>Variables declared by let have as their scope the block in which they are defined, as well as in any contained sub-blocks. In this way, let works very much like var. The main difference is that the scope of a var variable is the entire enclosing function</p>
+
+<p>Variables defined with const behave like let variables, except they cannot be reassigned:</p>
+</body>
+</html>
